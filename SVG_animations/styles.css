@@ -1,0 +1,188 @@
+body {
+  min-width: 450px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background-image: url(svgs/background.svg);
+  background: #edeff0;
+}
+
+#container {
+  max-width: 960px;
+  min-width: 415px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-menu li {
+  padding-right: 1rem;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+
+a:hover {
+  color: #111;
+}
+
+header {
+  padding-top: 40px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+h1 {
+  margin: 15px, 0, 0, 0;
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/* Hover/Transition */
+
+.nav-menu li:hover {
+  transform: rotateY(360deg);
+  transition: 1s ease-in;
+}
+
+a:hover{
+  color: rgb(255, 115, 0);
+}
+ .home:hover .heart,
+ .visit-us:hover .location,
+ .contact-us:hover .contact {
+  fill: rgb(68, 22, 0);
+}
+
+.outerColor,
+.paw-prints-logo {
+  transform-origin: 50% 60%;
+  transition: 1s ease-in;
+}
+
+.dog-paw-logo:hover .outerColor,
+.dog-paw-logo:hover .paw-prints-logo {
+  transform: rotateX(360deg);
+} 
+
+.corgi li:hover{
+  transform: scale(1.15);
+  transition: 1s ease-in;
+}
+
+/* SVG */
+
+.paw-logo-text {
+  display: block;
+  margin-bottom: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #da8058;
+}
+
+.dog-logo-text {
+  display: none;
+}
+
+.corgi {
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+  padding: auto;
+}
+
+.corgi li {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.corgi span {
+  font-size: 14px;
+  padding-right: 30px;
+  color: #c96d54;
+}
+
+.svg-logo-text,
+.paw-print {
+  fill:#F4C6A6
+}
+
+.svg-logo-text {
+  display: none;
+}
+
+.sable {
+  color:#B78366;
+}
+
+.fawn {
+  color:rgb(228, 183, 157);
+}
+
+.red {
+  color:#7C4709;
+}
+
+.stone {
+  color:#52595F;
+}
+
+
+/* Media query */
+
+@media (min-width: 425px) {
+  .dog-logo-text{
+    display: block;
+  }
+  .paw-logo-text {
+    display: none;
+  }
+}
